@@ -8,9 +8,17 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    @media @Desktop {
+        max-width: 687px;
+        flex-direction: row;
+      }
     @media @tablet{
         flex-direction: column;
+    }
+    h1{
+        @media @tablet{
+            font-size: 2em;
+        }
     }
 
     .left-nav{}
@@ -19,9 +27,13 @@ nav{
           font-size: 1.5rem;
            text-decoration: none;
             color:@font-color;
+            @media @Desktop {
+                font-size: 1.8em;
+                
+              }
             @media @tablet{
-                font-size: 3em;
-                margin-right: 7rem;
+                font-size: 1.5em;
+                margin:0 2rem;
             }
         
            }

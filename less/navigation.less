@@ -1,1 +1,29 @@
 // Navigation Styles here
+header{padding: 25px 0;
+    border-bottom: 2px dashed #C0C0C0;
+nav{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media @tablet{
+        flex-direction: column;
+    }
+
+    .left-nav{}
+    .right-nav{
+        a{margin-right: 2rem;
+          font-size: 1.5rem;
+           text-decoration: none;
+            color:@font-color;
+            @media @tablet{
+                font-size: 3em;
+                margin-right: 7rem;
+            }
+        
+           }
+    }
+}}

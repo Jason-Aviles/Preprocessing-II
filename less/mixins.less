@@ -1,1 +1,17 @@
 // Mixins in here
+.btnblue(@color,@text){
+    background: @color;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    padding: 15px 10px;
+    color: @text;
+    cursor: pointer;
+    &:hover{background: cornflowerblue;}
+    @media @tablet {padding: 22px 10px;}
+}
+
+.btn{
+    .btnblue(@button-bg,@main-bg)
+}

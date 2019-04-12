@@ -2,6 +2,7 @@
   .banner-section{    padding-bottom: 30px;
     border-bottom: 2px dashed #C0C0C0;
   img{    padding-bottom: 30px;
+      }
     }
   }
 
@@ -34,7 +35,13 @@
       padding-left: 1%;
 
       img {
-        border-radius: 10px;
+        border-radius: 10px;}
+        
+        .center-img{@media @phone{
+          width: 215%;
+          margin-left: -80px;
+          max-width: none;
+        }
       }
     }
   }
@@ -68,7 +75,7 @@
       }
     img {
       border-radius: 10px;
-     
+    
     }
   }
 
@@ -88,4 +95,4 @@
       @media @tablet {width: 75%;}
     }
   }
-}// home
+// home
